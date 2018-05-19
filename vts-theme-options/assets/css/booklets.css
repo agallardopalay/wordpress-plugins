@@ -1,0 +1,208 @@
+.booklets__header {
+  display: block;
+  text-align: center;
+  padding: 100px 20px;
+  background: #f6b220; }
+  .booklets__header h1 {
+    margin: 0;
+    padding: 0;
+    line-height: 1; }
+
+.booklets {
+  width: 90%;
+  max-width: 1300px;
+  margin: 100px auto;
+  text-align: center; }
+  .booklets a:hover {
+    opacity: 0.85; }
+  .booklets .booklets__hr {
+    display: inline-block;
+    width: 88px;
+    height: 2px;
+    background: #f6b220; }
+    .booklets .booklets__hr.booklets__hr--hidden {
+      background: transparent; }
+  .booklets .booklets__staff-list-tile__content {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center; }
+    .booklets .booklets__staff-list-tile__content h3 {
+      position: relative;
+      font-size: 20px;
+      color: #ffffff;
+      margin-top: 10px;
+      z-index: 1; }
+  .booklets .booklets__staff-list-tile__content__gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 45px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#545454+0,ffffff+100&1+0,0+100 */
+    background: -moz-linear-gradient(top, #545454 0%, rgba(255, 255, 255, 0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #545454 0%, rgba(255, 255, 255, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #545454 0%, rgba(255, 255, 255, 0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#545454', endColorstr='#00ffffff',GradientType=0 );
+    /* IE6-9 */ }
+  .booklets .booklets__staff-list-tile {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 2%;
+    background-size: cover;
+    background-position: center center; }
+    .booklets .booklets__staff-list-tile:hover {
+      opacity: 1; }
+      .booklets .booklets__staff-list-tile:hover .booklets__staff-list-tile__content {
+        display: inline-block; }
+    @media only screen and (max-width: 767px) {
+      .booklets .booklets__staff-list-tile {
+        width: 138px;
+        height: 138px;
+        margin: 1%; } }
+  .booklets .booklets__staff-list-wrapper {
+    position: relative; }
+    .booklets .booklets__staff-list-wrapper .booklets__vr {
+      left: 20%;
+      margin-top: -40px;
+      z-index: 2; }
+  .booklets .booklets__staff-list-left {
+    float: left;
+    width: 40%; }
+    .booklets .booklets__staff-list-left h3 {
+      position: relative;
+      margin-top: 50px;
+      padding: 30px 0;
+      background: #ffffff;
+      z-index: 3; }
+    @media only screen and (max-width: 1023px) {
+      .booklets .booklets__staff-list-left {
+        width: 100%; }
+        .booklets .booklets__staff-list-left h3 {
+          padding: 0;
+          margin-top: 10px; } }
+  .booklets .booklets__staff-list-right {
+    float: left;
+    width: 60%; }
+    @media only screen and (max-width: 1023px) {
+      .booklets .booklets__staff-list-right {
+        width: 100%; } }
+  .booklets .booklets__go-back {
+    text-align: right;
+    margin: 0 0 70px 10px; }
+  .booklets .booklets__vr {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background: #f6b220; }
+    @media only screen and (max-width: 1023px) {
+      .booklets .booklets__vr {
+        display: none; } }
+  .booklets .booklets__position {
+    font-size: 1.2em;
+    margin: 0;
+    line-height: 1; }
+  .booklets .booklets__bio {
+    padding: 0 5%; }
+  .booklets .booklets__top--less {
+    height: 450px; }
+  .booklets .booklets__top__left,
+  .booklets .booklets__top__right {
+    position: relative;
+    float: left; }
+  .booklets .booklets__top__left {
+    width: 40%;
+    text-align: center; }
+    @media only screen and (max-width: 1023px) {
+      .booklets .booklets__top__left {
+        width: 100%; } }
+  .booklets .booklets__top__right {
+    width: 58%;
+    margin-left: 2%;
+    height: 100%;
+    overflow: hidden; }
+    @media only screen and (max-width: 1023px) {
+      .booklets .booklets__top__right {
+        width: 100%; } }
+  .booklets .booklets__info {
+    margin-bottom: 20px; }
+    .booklets .booklets__info h3 {
+      margin-bottom: 10px; }
+    .booklets .booklets__info .booklets__social-icons i {
+      padding: 10px; }
+  .booklets .booklets__image-wrapper {
+    display: inline-block;
+    position: relative;
+    max-width: 100%; }
+  .booklets .booklets__image,
+  .booklets .booklets__image-shadow {
+    width: 400px;
+    height: 450px;
+    max-width: 100%; }
+    @media only screen and (max-width: 1023px) {
+      .booklets .booklets__image,
+      .booklets .booklets__image-shadow {
+        margin-bottom: 40px;
+        width: 350px;
+        height: 400px; } }
+    @media only screen and (max-width: 767px) {
+      .booklets .booklets__image,
+      .booklets .booklets__image-shadow {
+        width: 260px;
+        height: 310px; } }
+  .booklets .booklets__image {
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    z-index: 2; }
+  .booklets .booklets__image-shadow {
+    position: absolute;
+    top: -35px;
+    left: -35px;
+    background: #f6b220;
+    z-index: 1; }
+    @media only screen and (max-width: 1023px) {
+      .booklets .booklets__image-shadow {
+        top: -20px;
+        left: -20px; } }
+  .booklets .booklets__show-more {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 7px;
+    text-align: center;
+    background: #ffffff; }
+    .booklets .booklets__show-more.hidden {
+      display: none !important; }
+  .booklets .booklets__top--less .booklets__show-more {
+    display: block; }
+  .booklets .booklets__facts_title {
+    margin: 40px 0; }
+  .booklets .booklets__facts {
+    position: relative; }
+    .booklets .booklets__facts .booklets__facts__left,
+    .booklets .booklets__facts .booklets__facts__right {
+      float: left;
+      width: 50%; }
+      @media only screen and (max-width: 1023px) {
+        .booklets .booklets__facts .booklets__facts__left,
+        .booklets .booklets__facts .booklets__facts__right {
+          width: 100%; } }
+  .booklets .booklets__fact {
+    padding: 15px 60px; }
+    .booklets .booklets__fact h3 {
+      font-size: 28px; }
+
+/*# sourceMappingURL=booklets.css.map */
