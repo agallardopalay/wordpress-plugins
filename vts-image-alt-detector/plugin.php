@@ -4,7 +4,7 @@
  * Plugin Name:       VTS: Alt Text Scanner
  * Plugin URI:        http://venturetechsolutions.com/
  * Description:       Check for missing alternative text on uploaded images.
- * Version:           1.0.2
+ * Version:           1.0.3
  * Author:            Venture Tech Solutions
  * Developer:		  Adrian Gallardo
  * Author URI:        http://venturetechsolutions.com/

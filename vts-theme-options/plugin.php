@@ -5,7 +5,7 @@
  * Plugin Name:       VTS: Theme Options
  * Plugin URI:        http://venturetechsolutions.com/
  * Description:       Adds Theme Options Page.
- * Version:           1.0.0
+ * Version:           1.0.1
  * Author:            Venture Tech Solutions
  * Developer:		  Adrian Gallardo
  * Author URI:        http://venturetechsolutions.com/

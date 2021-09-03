@@ -5,7 +5,7 @@
  * Plugin Name:       VTS: Booklets
  * Plugin URI:        http://venturetechsolutions.com/
  * Description:       Adds pages for Booklets.
- * Version:           1.0.0
+ * Version:           1.0.1
  * Author:            Venture Tech Solutions
  * Developer:		  Adrian Gallardo
  * Author URI:        http://venturetechsolutions.com/
