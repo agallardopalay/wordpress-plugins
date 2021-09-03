@@ -1,0 +1,21 @@
+/**
+ * Editor styles for the admin
+ */
+
+
+.wp-block[data-type="vt/card-container"] .flash-card {
+	.back {
+		transform: none;
+		perspective: none;
+		position: relative;
+		visibility: visible;
+	}
+
+	.card-body {
+		padding: 0;
+	}
+}
+
+.wp-block[data-type="vt/card-container"] .card {
+	max-width: 100%;
+}

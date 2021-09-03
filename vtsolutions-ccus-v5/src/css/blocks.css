@@ -1,0 +1,25 @@
+.scalable {
+    overflow: hidden;
+    margin: auto 0;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.scalable.scalable-16-9 .scalable-content {
+    padding-bottom: 56.25%;
+}
+
+.scalable .scalable-content {
+    height: 0;
+    position: relative;
+}
+
+.scalable iframe {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}

@@ -1,0 +1,89 @@
+/* Credibility Logos Styles */
+.modal-open {
+  overflow: hidden;
+}
+
+.modal {
+  visibility: hidden;
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+  background: rgb(2 17 31 / 70%);
+  overflow: auto;
+
+  @media (max-width: 767px) {
+    overflow: hidden;
+  }
+}
+
+.modal.modal-visible {
+  visibility: visible;
+  opacity: 1;
+
+  @media (max-width: 767px) {
+    overflow: auto;
+    display: block;
+  }
+}
+
+.modal__content {
+  position: relative;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background: #ffffff;
+  max-width: 925px;
+  padding: 25px 0 0 25px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 40px 0px #02111f;
+
+  @media (max-width: 767px) {
+    padding: 25px
+  }
+}
+
+#close-modal {
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  font-size: 40px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-body {
+  min-height: 350px;
+  padding-bottom: 50px;
+  background: url('../../src/images/hud-person.jpg') no-repeat bottom right;
+
+  #theContent {
+      width: 63%;
+      font-size: 21px;
+      padding: 15px 0;
+
+      @media (max-width: 767px) {
+        width: 100%;
+      }
+  }
+
+  a:not(.btn) {
+    @apply text-ccusBlue;
+  }
+
+  &.bg-modal-cred-bbb {
+      background: url('../../src/images/bbb-person.jpg') no-repeat bottom right 50px;
+  }
+
+  @media (max-width: 767px) {
+    background: none !important;
+  }
+
+}/*  /.modal-body */

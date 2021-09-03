@@ -1,0 +1,8 @@
+/**
+ * Editor styles for the admin
+ */
+.wp-block {
+  &[data-type="vt/container"]{
+    padding-top: 0;
+  }
+}

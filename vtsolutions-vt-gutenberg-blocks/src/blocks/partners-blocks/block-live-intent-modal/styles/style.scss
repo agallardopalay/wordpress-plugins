@@ -1,0 +1,28 @@
+.modal {
+	.ab-block-container {
+		iframe {
+			min-height: 480px;
+		}
+	}
+}
+
+.modal-open {
+	padding-right: 0!important;
+}
+.modal {
+	.modal-mobile-content {
+		display: none;
+	}
+	.modal-desktop-content {
+		display: block;
+	}
+
+	&.is-mobile {
+		.modal-mobile-content {
+			display: block;
+		}
+		.modal-desktop-content {
+			display: none;
+		}
+	}
+}

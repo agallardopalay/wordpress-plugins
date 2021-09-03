@@ -1,0 +1,81 @@
+/**
+ * Layout column styles
+ * Loads on front end and back end
+ */
+
+.wp-block-atomic-blocks-ab-layout {
+	margin-bottom: 1.5em;
+}
+
+[data-type="atomic-blocks/ab-column"],
+.ab-block-layout-column {
+	display: block;
+	vertical-align: top;
+	min-width: 0;
+}
+
+.ab-block-layout-column {
+	&.ab-is-vertically-aligned-top {
+		align-self: flex-start;
+	}
+
+	&.ab-is-vertically-aligned-center {
+		align-self: center;
+	}
+
+	&.ab-is-vertically-aligned-bottom {
+		align-self: flex-end;
+	}
+}
+
+.wp-block-atomic-blocks-ab-layout.alignfull {
+	padding: 0 2em;
+
+	@media only screen and (max-width: 600px) {
+		padding: 0 15px;
+	}
+}
+
+.ab-block-layout-column {
+	display: block;
+	width: 100%;
+}
+
+.ab-columns-center .ab-layout-column-wrap {
+	margin: 0 auto;
+}
+
+.wp-block-vt-ab-columns {
+	.row {
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
+
+
+/* Column selector CSS */
+
+.ab-column-selector-group {
+	margin-top: 10px;
+}
+
+.ab-column-selector {
+	display: inline-block;
+	margin: 0 5px;
+
+	button.ab-column-selector-button {
+		padding: 15px;
+		height: auto;
+		border-radius: 5px;
+		background: #fff;
+
+		&:hover {
+			background: #fff;
+		}
+	}
+
+	button.components-button.is-button:last-child {
+		border-radius: 5px;
+	}
+}

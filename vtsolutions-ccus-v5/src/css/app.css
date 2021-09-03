@@ -1,0 +1,138 @@
+/* Importing Tailwind default classes  */
+@import "bootstrap.css";
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import "./header.css";
+@import "./footer.css";
+@import "./blocks.css";
+@import "./theme.css";
+
+/* ccus Generic Clases */
+@layer base {
+  @font-face {
+    font-family: "Cabin";
+    src: url("../../src/fonts/Cabin-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Cabin";
+    src: url("../../src/fonts/Cabin-Italic.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Cabin";
+    src: url("../../src/fonts/Cabin-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Cabin";
+    src: url("../../src/fonts/Cabin-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Cabin";
+    src: url("../../src/fonts/Cabin-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-display: swap;
+  }
+}
+
+
+body {
+  @apply font-Cabin text-ccusBlack font-normal text-regular;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+a {
+  word-break: break-word;
+}
+
+/* Button Styles */
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+  border-radius: 8px;
+  transition: all .2s;
+  position: absolute;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-orange {
+  /* background-color: #fbb237;
+  color: #090909; */
+  @apply bg-ccusOrange text-black;
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .4s;
+}
+
+.btn-orange::after {
+  /* background-color: #fbb237; */
+  @apply bg-ccusOrange;
+}
+
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.btn-animated {
+  animation: moveInBottom 5s ease-out;
+  animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+  0% {
+      opacity: 0;
+      transform: translateY(30px);
+  }
+
+  100% {
+      opacity: 1;
+      transform: translateY(0px);
+  }
+}
+/* End of Button Cunstomization */
+
+/* Used for ADA purposes */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}

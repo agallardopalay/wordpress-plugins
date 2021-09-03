@@ -1,0 +1,36 @@
+/**
+ * CTA styles
+ * Loads on front end and back end
+ */
+
+.ab-button-right {
+	transform: translateX(-100%);
+	left: 100%;
+	position: relative;
+}
+
+.ab-button-center {
+	margin: 0 auto;
+}
+
+.ab-cta-inspector-media.components-button {
+	vertical-align: top;
+	border: 1px solid #e2e4e7;
+	background-color: #fff;
+	display: inline-flex;
+	border-radius: 3px;
+	margin-bottom: 15px;
+
+	&:hover {
+		box-shadow: none !important;
+		border: solid 1px #555d66;
+	}
+
+	&:first-child {
+		margin-right: 8px;
+	}
+
+	svg {
+		margin-right: 5px;
+	}
+}

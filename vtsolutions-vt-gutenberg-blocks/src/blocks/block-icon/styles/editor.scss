@@ -1,0 +1,29 @@
+
+.wp-block {
+	&[data-type="vt/icon"] {
+		.icon-wrapper {
+			display: block;
+
+			i {
+				font-style: normal;
+			}
+		}
+
+		&:not(.is-selected) {
+			display: inline-block;
+			padding: 0;
+
+			> .editor-block-list__block-edit {
+				margin-left: 0;
+				margin-right: 0;
+			}
+		}
+
+		&.is-selected {
+			.icon-wrapper {
+				display: block;
+			}
+		}
+	}
+}
+

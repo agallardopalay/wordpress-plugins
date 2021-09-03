@@ -1,0 +1,223 @@
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+
+.editor-styles-wrapper {
+	width: 100%;
+}
+
+.wp-block-cgb-block-vt-blocks {
+  background: green;
+  border: 0.2rem solid #000;
+  color: #000;
+  margin: 0 auto;
+  max-width: 740px;
+  padding: 2rem;
+}
+
+.wp-block-legacy-widget__edit-container,
+.wp-block-legacy-widget__preview {
+  padding: 0 !important;
+}
+
+
+/**
+ * Tabs Control.
+ */
+.vt-control-tabs {
+
+  .components-tab-panel__tabs {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #e8eaeb;
+
+    .vt-control-tabs-tab {
+      padding: 10px;
+      margin: 0;
+      color: #555d66;
+      cursor: pointer;
+      background: none;
+      border: none;
+      border-bottom: 2px solid transparent;
+      border-radius: 0;
+      outline-offset: -1px;
+
+      svg {
+        display: block;
+        width: auto;
+        height: 1.4em;
+      }
+
+      &.is-active {
+        position: relative;
+        border-bottom: 2px solid #00a0d2;
+        z-index: 1;
+      }
+    }
+  }
+
+  .vt-control-tabs-separator {
+    padding: 15px;
+    margin-right: -15px;
+    margin-left: -15px;
+    border-top: 1px solid #e8eaeb;
+
+    &:first-child {
+      margin-top: -16px;
+    }
+  }
+}
+
+//block title when you are in selection mode
+.components-popover__content {
+	.block-editor-block-list__breadcrumb .components-toolbar {
+		.components-button {
+			font-size: 12px;
+			line-height: 12px;
+			font-weight: bold;
+		}
+	}
+}
+
+// Block Extensions - Aug 2020
+.core-block-editor-wrapper {
+	> p {
+		margin: 0!important;
+		padding: 0!important;
+		border: none;
+	}
+
+	> h1,h2,h3,h4,h5,h6 {
+		margin: 0;
+		padding: 0;
+		border: none;
+	}
+}
+
+.wp-block.is-selected {
+	&[data-type="core/paragraph"] {
+		&:before {
+			top: 0;
+			bottom: 0;
+		}
+	}
+
+	&[data-type="core/heading"] {
+		&:before {
+			top: 0;
+			bottom: 0;
+		}
+	}
+}
+
+.wp-block:not(.is-selected) {
+	&[data-type="core/paragraph"] {
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+
+	&[data-type="core/heading"] {
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+}
+
+
+.components-popover.block-editor-block-list__block-popover  {
+	.components-popover__content {
+		.block-editor-block-contextual-toolbar {
+			margin-bottom: -1px;
+		}
+		.block-editor-block-list__breadcrumb {
+			margin-bottom: -1px;
+		}
+	}
+}
+
+.block-editor-block-list__layout {
+	.block-editor-block-list__block:before {
+		bottom: 0;
+		top: 0;
+	}
+}
+
+.form-editor {
+	background: #dadada;
+	color: #0b0b0b;
+	padding: 15px;
+
+	h4 {
+		margin: 0;
+		padding: 0;
+	}
+
+}
+
+.form-wrapper {
+	.header-title {
+		border: 1px dashed rgba(145, 151, 162, 0.25);
+		padding: 15px;
+		margin: 0;
+	}
+	.form-submit {
+		min-width: 250px;
+	}
+}
+
+.wp-block[data-type="acf/form-block"], .wp-block[data-type="acf/featured-video-block"] {
+	.acf-block-preview {
+		.banner-form-wrapp {
+			padding-top: 80px;
+
+			fieldset {
+				display: block!important;
+			}
+		}
+	}
+
+	.editor-block-list__block-edit [data-block] {
+		margin-top: 28px;
+		margin-bottom: 28px;
+	}
+	.acf-field .acf-label label {
+		font-size: 12px!important;
+	}
+
+
+	.acf-input-wrap {
+		float: none;
+		margin: 0;
+		left: 0;
+		clear: left;
+	}
+
+	.acf-fields {
+		.acf-input {
+			display: block;
+			float: none;
+			clear: left;
+			font-size: 12px!important;
+		}
+	}
+
+	.acf-block-body .acf-fields>.acf-field {
+		padding: 5px;
+	}
+
+	.material-select-wrapper {
+		select.form-control:not([size]):not([multiple]) {
+			height: 38px;
+			padding: 5px 0 5px 10px;
+			font-size: 13px;
+			border: none !important;
+			width: 100%;
+			max-width: 100%;
+		}
+	}
+}
+
+

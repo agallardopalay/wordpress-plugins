@@ -1,0 +1,25 @@
+.wp-block[data-type="vt/modal"] {
+
+	.modal {
+		display: block;
+		position: static;
+
+		.toggle-modal {
+			display: block;
+			pointer-events: all;
+		}
+	}
+
+	.modal-header {
+		.modal-title {
+			display: block;
+			width: 100%;
+
+			.rich-text {
+				display: block;
+				min-height: 30px;
+				width: 100%;
+			}
+		}
+	}
+}

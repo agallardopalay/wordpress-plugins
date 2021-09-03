@@ -1,0 +1,44 @@
+.wp-block[data-type="vt/live-intent-modal"] {
+
+	.modal {
+		display: block;
+		position: static;
+
+		.toggle-modal {
+			display: block;
+			pointer-events: all;
+		}
+
+		.modal-content {
+			.modal-body {
+				&.mobile-view {
+					.wp-block[data-type="vt/inner-live-intent-desktop"] {
+						display: none;
+					}
+				}
+				&.desktop-view {
+					.wp-block[data-type="vt/inner-live-intent-mobile"] {
+						display: none;
+					}
+				}
+
+				.modal-mobile-content {
+					display: block!important;
+				}
+			}
+		}
+	}
+
+	.modal-header {
+		.modal-title {
+			display: block;
+			width: 100%;
+
+			.rich-text {
+				display: block;
+				min-height: 30px;
+				width: 100%;
+			}
+		}
+	}
+}

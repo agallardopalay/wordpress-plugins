@@ -1,0 +1,23 @@
+{
+    "colors": {
+      "ccusBlue": "#004e8e",
+      "ccusLightBlue": "#ecf1fe",
+      "ccusLightGray": "#f4f4f4",
+
+      "ccusYellow": "#fbb138",
+      "ccusOrange": "#e8730b",
+      "ccusGreen": "#3ab795",
+      "ccusMediumGray": "#e5e5e5",
+
+      "ccusBlack": "#090909",
+      "ccusDarkGray": "#585858"
+    },
+    "fontSizes": {
+        "small": ["14px"],
+        "15px": ["15px"],
+        "normal": ["16px"],
+        "regular": ["17px"],
+        "21px": ["21px"],
+        "large": ["22px", "bold"]
+    }
+}
