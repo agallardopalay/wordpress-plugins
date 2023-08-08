@@ -1,0 +1,56 @@
+/** 
+ * TODO: move the following definitions to a global style.
+ */
+html {
+	scroll-behavior: smooth;
+	scroll-padding-top: 2rem;
+}
+
+#frbsf-toc {
+	h2 {
+		position: relative;
+		font-size: 21px;
+		font-weight: 600;
+		color: #2C3143;
+		margin-bottom: 35px;
+		letter-spacing: .5px;
+		text-transform: uppercase;
+
+		&::after {
+			content: "";
+			display: block;
+			position: absolute;
+			background: rgb(45 50 70 / 25%);
+			border-radius: 50px;
+			height: 3px;
+			width: 50px;
+			top: 35px;
+			left: 0;
+		}
+	}
+
+	ul,
+	ol {
+		li {
+			margin-bottom: 10px;
+
+			a {
+				color: #028580;
+				font-weight: 600;
+				text-decoration: none;
+			}
+		}
+	}
+
+	ol {
+		padding-left: 20px;
+	}
+
+	ul {
+		padding-left: 0;
+
+		li {
+			list-style: none;
+		}
+	}
+}

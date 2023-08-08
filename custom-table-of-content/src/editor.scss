@@ -1,0 +1,61 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-create-block-custom-table-of-content {
+	border: 1px dotted #f00;
+}
+
+.editor-styles-wrapper {
+	h2.custom-toc-heading {
+		position: relative;
+		font-size: 21px;
+		font-weight: 600;
+		color: #2C3143;
+		margin-bottom: 35px;
+		letter-spacing: .5px;
+		text-transform: uppercase;
+
+		&::after {
+			content: "";
+			display: block;
+			position: absolute;
+			background: rgb(45 50 70 / 25%);
+			border-radius: 50px;
+			height: 3px;
+			width: 50px;
+			top: 35px;
+			left: 0;
+		}
+	}
+
+	a.custom-toc-links {
+		color: #028580 !important;
+		font-weight: 600;
+		text-decoration: none;
+	}
+}
+
+.wp-block-create-block-custom-table-of-content {
+
+	ul,
+	ol {
+		li {
+			margin-bottom: 10px;
+		}
+	}
+
+	ol {
+		padding-left: 20px;
+	}
+
+	ul {
+		padding-left: 0;
+
+		li {
+			list-style: none;
+		}
+	}
+}

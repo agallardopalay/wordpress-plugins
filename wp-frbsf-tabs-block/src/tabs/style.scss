@@ -1,0 +1,65 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+@use "@material/theme" with ($primary: #028580);
+
+@use "@material/tab-bar/mdc-tab-bar";
+@use "@material/tab-scroller/mdc-tab-scroller";
+@use "@material/tab-indicator/mdc-tab-indicator";
+@use "@material/tab/mdc-tab";
+
+.brand-tab-screen {
+	display: none;
+}
+
+.brand-tab-screen--active {
+	display: block;
+}
+
+.tab-wrap {
+	.mdc-tab-scroller__scroll-content {
+		display: flex;
+		flex-direction: row;
+		background-color: #1A1C20;
+		border-radius: 50px;
+		padding: 3px;
+	}
+
+	.mdc-tab {
+		border-radius: 50px;
+		flex: 0 0 auto;
+		margin-right: 3px;
+
+		&:hover {
+			background: rgb(75 93 119 / 50%);
+			transition: all .2s ease-in;
+		}
+
+		&.mdc-tab--active[aria-selected="true"] {
+			background-color: #028580;
+		}
+
+		.mdc-tab__text-label {
+			color: #FFFFFF;
+			font-weight: bold;
+			text-transform: initial;
+		}
+
+		.mdc-tab-indicator__content--underline {
+			border: none;
+		}
+
+		.mdc-tab__ripple::before,
+		.mdc-tab .mdc-tab__ripple::after {
+			background-color: transparent;
+			opacity: 0;
+		}
+	}
+
+	.wp-block-brand-tab {
+		padding-top: 20px;
+	}
+}

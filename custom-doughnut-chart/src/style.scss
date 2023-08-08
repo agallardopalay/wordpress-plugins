@@ -1,0 +1,43 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+// Automatic clas applied to the component
+/* .wp-block-create-block-custom-doughnut-chart {
+
+} */
+
+
+.custom-doughnut-chart__table {
+	display: table;
+	border-collapse: collapse;
+	margin-top: 25px;
+	width: 100%;
+}
+
+.custom-doughnut-chart__table-row {
+	display: table-row;
+}
+
+.custom-doughnut-chart__table-cell {
+	display: table-cell;
+	padding: 3px 10px;
+	vertical-align: top;
+}
+
+.custom-doughnut-chart__table-text {
+	padding-top: 12px;
+}
+
+.custom-doughnut-chart__table-percent {
+	font-size: 40px;
+	font-weight: bold;
+	width: 50px;
+
+	@media screen and (max-width: 768px) {
+		font-size: 30px;
+	}
+}

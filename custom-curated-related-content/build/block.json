@@ -1,0 +1,44 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "create-block/custom-curated-related-content",
+  "version": "0.1.0",
+  "title": "Curated Related Content",
+  "category": "widgets",
+  "attributes": {
+    "selectedPost": {
+      "type": "object"
+    },
+    "allSelectedPosts": {
+      "type": "array",
+      "default": []
+    },
+    "displayViewMoreButton": {
+      "type": "boolean",
+      "default": true
+    },
+    "numberOfVisibleItems": {
+      "type": "number",
+      "default": 3
+    },
+    "displayThumbnail": {
+      "type": "boolean",
+      "default": true
+    },
+    "displayAuthorInfo": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "icon": "list-view",
+  "description": "Manually curated related content.",
+  "supports": {
+    "html": false,
+    "anchor": true
+  },
+  "textdomain": "custom-curated-related-content",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}

@@ -1,0 +1,124 @@
+/**
+ * The following styles get applied inside the editor only.
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.tab-wrap {
+	background: #fff;
+	border: 1px dotted #dad8d8;
+
+	.block-core-columns {
+		border: 1px dotted #dad8d8;
+	}
+
+	.custom-tab-scroller {
+		border-bottom: 1px dotted #dad8d8;
+		display: flex;
+	}
+
+	.custom-tab {
+		flex: 1 0 auto;
+		background-color: #028580;
+
+		&.custom-tab-plus {
+			background-color: transparent;
+			margin-top: 3px;
+
+			&:hover {
+				background: rgb(75 93 119 / 15%);
+			}
+
+			&.custom-tab--active {
+				background-color: transparent;
+			}
+		}
+	}
+
+    .custom-tab-scroller__scroll-content {
+        border-radius: 0;
+        background-color: transparent;
+    }
+}
+
+
+
+//
+// Tab Styles
+// ----------
+
+.custom-tab-bar {
+    background-color: #1A1C20;
+    border-radius: 50px;
+}
+
+[data-tab-component] {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 960px;
+    position: relative;
+    
+    // Tab navigation
+    [role="tablist"] {
+      margin-bottom: 0;
+      padding-left: 0;
+  
+      @media (min-width: 568px) {
+        display: flex;
+      }
+    }
+    
+    // Tab navigation items
+    [role="presentation"] { 
+      flex: 1; 
+      list-style-type: none;
+    }
+    
+    // Tab navigation links
+    [role="tab"]{
+      align-items: center;
+      background-color: transparent;
+      border: none;
+      color: #fff;
+      border-radius: 50px;
+      cursor: pointer;
+      font-size: 14px;
+      line-height: 16px;
+      font-weight: bold;
+      justify-content: center;
+      text-align: center;
+      text-decoration: none;
+      transition: background-color 150ms;
+      margin-right: 10px;
+      padding: 0 10px 0 15px;
+  
+      &:hover {
+        background: #313a4a;
+        color: #fff;
+      }
+  
+      // Modifiers
+      &[aria-selected="true"] {
+        background-color: #028580;
+        color: #fff;
+      }
+    }
+    
+    // Tab panels
+    [role="tabpanel"] {
+        background-color: #028580;
+        padding: 30px;
+      
+      &[aria-hidden="true"] { 
+        display: none;
+      }
+    }
+
+    .components-button.has-icon {
+        min-width: 25px;
+        padding: 0 4px;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+  }

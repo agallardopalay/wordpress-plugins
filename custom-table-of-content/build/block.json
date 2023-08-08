@@ -1,0 +1,30 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "create-block/custom-table-of-content",
+  "version": "0.1.0",
+  "title": " Table Of Content",
+  "category": "widgets",
+  "icon": "list-view",
+  "description": "Custom Table of Content block scaffolded with Create Block tool.",
+  "supports": {
+    "html": false
+  },
+  "textdomain": "custom-table-of-content",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "default": "Contents"
+    },
+    "listType": {
+      "enum": [
+        "ol",
+        "ul"
+      ],
+      "default": "ol"
+    }
+  }
+}

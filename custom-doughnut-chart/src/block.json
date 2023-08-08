@@ -1,0 +1,22 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "create-block/custom-doughnut-chart",
+	"version": "0.1.0",
+	"title": "Doughnut Chart",
+	"category": "widgets",
+	"icon": "chart-pie",
+	"description": "Doughnut Chart block scaffolded with Create Block tool.",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "custom-doughnut-chart",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"attributes": {
+		"chartData": {
+			"type": "array"
+		}
+	}
+}

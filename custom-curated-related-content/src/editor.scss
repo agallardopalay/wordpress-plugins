@@ -1,0 +1,25 @@
+.wp-block-create-block-custom-curated-related-content {
+  border: 1px solid #fae9d1;
+  background-color: #fefbf7;
+  padding: 10px;
+  color: #000;
+}
+
+h6 {
+  margin: 0 !important;
+  font-size: var(--wp--preset--font-size--x-small) !important;
+}
+
+.block-editor-url-input::before {
+  content: "\a";
+  white-space: pre;
+}
+
+.components-panel__row {
+  width: 100%;
+  display: block;
+
+  label {
+    max-width: 100%;
+  }
+}

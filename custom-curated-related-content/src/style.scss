@@ -1,0 +1,129 @@
+.wp-block-create-block-custom-curated-related-content {
+  .custom-related-content-headline {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .custom-curated-related-content-article {
+    margin-bottom: 30px;
+
+    .custom-headline {
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 0;
+      margin-bottom: 5px;
+    }
+
+    .custom-linked-headline {
+      color: #000;
+      text-decoration: none;
+
+      :hover {
+        color: #028580;
+      }
+    }
+
+    .custom-category {
+      font-size: 14px;
+      margin-bottom: 5px;
+      text-transform: uppercase;
+
+      p {
+        margin: 0;
+      }
+
+      a {
+        color: #028580;
+        text-decoration: none;
+
+        &:hover {
+          color: #000;
+        }
+      }
+    }
+
+    .custom-byline {
+      font-size: 14px;
+
+      address {
+        font-style: normal;
+      }
+
+      a {
+        color: #028580;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .custom-view-more-btn {
+    border: 0;
+    background: transparent;
+    color: #028580;
+    font-weight: bold;
+    font-size: 14px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: color 0.2s ease;
+
+    &:hover {
+      cursor: pointer;
+      color: #000;
+      transition: color 0.2s ease;
+    }
+
+    svg {
+      margin-right: 10px;
+    }
+  }
+
+  .hidden {
+    display: none;
+    opacity: 0;
+  }
+
+  .visible {
+    display: block;
+    opacity: 1;
+    animation: fadeIn 0.5s;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+.custom-curated-related-content-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  .custom-curated-related-content-thumbnail {
+    flex: 0 0 auto;
+    width: 30%;
+    max-width: 100%;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .custom-thumbnail-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .custom-curated-related-content-header {
+    flex: 0 0 auto;
+    width: 70%;
+    max-width: 100%;
+  }
+}

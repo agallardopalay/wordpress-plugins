@@ -1,0 +1,51 @@
+/**
+ * The following styles get applied inside the editor only.
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.tab-wrap {
+	background: #fff;
+	border: 1px dotted #dad8d8;
+
+	.block-core-columns {
+		border: 1px dotted #dad8d8;
+	}
+
+	.mdc-tab-scroller {
+		border-bottom: 1px dotted #dad8d8;
+		display: flex;
+	}
+
+	.mdc-tab {
+		flex: 1 0 auto;
+		background-color: #028580;
+
+		&.mdc-tab-plus {
+			background-color: transparent;
+			margin-top: 3px;
+
+			&:hover {
+				background: rgb(75 93 119 / 15%);
+			}
+
+			&.mdc-tab--active {
+				background-color: transparent;
+			}
+		}
+	}
+
+	.mdc-tab {
+		button {
+			color: #fff;
+			font-size: 18px;
+
+			&:hover {
+				color: red;
+			}
+		}
+	}
+
+	.mdc-tab-scroller__scroll-content {
+		background-color: #fff;
+	}
+}
